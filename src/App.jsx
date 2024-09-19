@@ -1,16 +1,12 @@
-import { useState } from 'react'
+import React from 'react'
+import Home from './pages/Home';
+import { Routes, Route } from 'react-router-dom'
 
-import Header from './Components/Header'
-import Content from './Components/Content'
-import Footer from './Components/Footer'
-function App() {
-
-
+const App = () => {
   return (
-    <>
-    <Header/>
-    <Content/>
-    </>
+    <Routes>
+      <Route path='/' element={<Home />} ></Route>
+    </Routes>
   )
 }
 
