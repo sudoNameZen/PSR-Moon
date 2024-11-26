@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style_approach.css">
+</head>
+<body>
+    <h1>OUR APPROACH</h1>
+    <h2>TECHNOLOGIES USED :</h2>
+    <p>
+        <b>Language :</b> Python<br>
+        <b>Libraries :</b> OpenCV, PyTorch, NumPy, Tensorflow,GDAL, matplotlib, Scikit-images<br>
+        <b>Tools/Frameworks :</b> Google Colab, QGIS, keras API<br>
+        <b>Training :</b> Nvidia CUDA<br>
+        <b>Dataset :</b> PRADAN <br>
+    </p>
+
+    <h2>IDEA OF OUR MODEL :</h2>
+    <p>
+        ● Infrared waves are used in many Research papers for low light enhancement. We incorporated similar approach to enhance the PSR.<br>
+        ● In order to enhance the PSR of the moon, we are combining the two datasets of different spectrum, i.e., OHRC (Visible) & IIRS (Infrared).<br>
+        ● We acquired data from PRADAN platform and processed it in QGIS & python.<br>
+        ● Further, images are given to two separate  Encoders which generates two different embeddings for each image. <br>
+        ● Structural Embeddings (SE)  for IIRS image , stores information about the structure visible in the IIRS dataset.<br>
+        ● Resolution Embeddings (RE) for storing information regarding the resolution of OHRC image.<br>
+        ● These embeddings are given to a Decoder which combines the information of both the embeddings and creates a new image using GAN deep learning model.<br>
+        ● Enhanced image is sent back to the encoder which generates the embeddings (SE & RE) which is compared with the embeddings of the original images .<br>
+        ● Loss is calculated between both the embeddings of original and enhanced images .<br>
+         ● With the help of gradient descent, improved embeddings are sent back to GAN.<br>
+        ● Process continued until optimized results are obtained.<br>
+    </p>
+    <h2>MODEL EXPLANATION :</h2>
+    <img src="../images/model.png" height="500"/>
+    <br><br><br>
+    <a href="/">Back to Home</a>
+</body>
+

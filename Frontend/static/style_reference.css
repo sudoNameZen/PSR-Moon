@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color:cornsilk ;
+    text-align: center;
+}
+
+h2{
+    color:coral;
+}
+
+#last{
+    color:#46685F;
+}
+
+p{
+    text-align: justify;
+    margin-left:25%;
+}
